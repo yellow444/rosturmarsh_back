@@ -48,6 +48,7 @@
     "server": "node ./bin/app.js",
     "dev": "npm-run-all build server",
     "start": "yarn dev",
-    "watch": "nodemon"
+    "watch": "nodemon",
+    "debug": "nodemon --inspect-brk=5858 --exec \"babel-node\" src/app.js"
   }
 }

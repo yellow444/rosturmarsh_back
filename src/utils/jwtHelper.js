@@ -4,8 +4,8 @@ import jsonwebtoken from 'jsonwebtoken';
 
 export const REFRESH_EXPIRES_IN = 7;
 
-const jwtPrivate = path.join(__dirname, '../crypto/', 'jwtPrivate.pem');
-const refreshPrivate = path.join(__dirname, '../crypto/', 'refreshPrivate.pem');
+const jwtPrivate = path.join(__dirname, '../crypto/', 'jwtPrivate.key');
+const refreshPrivate = path.join(__dirname, '../crypto/', 'refreshPrivate.key');
 const refreshPublic = path.join(__dirname, '../crypto/', 'refreshPublic.pem');
 const JWT_PRIV_KEY = fs.readFileSync(jwtPrivate, 'utf8');
 const REFRESH_PRIV_KEY = fs.readFileSync(refreshPrivate, 'utf8');
